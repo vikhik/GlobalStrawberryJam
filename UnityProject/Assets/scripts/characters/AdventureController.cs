@@ -6,15 +6,20 @@ public class AdventureController : MonoBehaviour {
 	public WalkingArea walkingarea;
 	public SmartObject target = null;
 	public float walkspeed = 1.0f;
+	public Animator animator;
+	private bool facingLeft = true;
 
 	// Use this for initialization
 	void Start () {
 		walkingarea = FindObjectOfType<WalkingArea>();
+		animator = GetComponent<Animator>();
 	}
 
 	void targetReached() {
 		target.touched();
 		target = null;
+		animator.SetBool("isWalking", false);
+		animator.SetTrigger("grabObject");
 	}
 	
 	// Update is called once per frame
@@ -53,12 +58,21 @@ public class AdventureController : MonoBehaviour {
 
 				transform.Translate(translationvector.normalized * translationdistance);
 
-				// TODO: ANIMATION
 				if (translationvector.x > 0) {
-					// going right
+					if (facingLeft != false) {
+						facingLeft = false;
+						Vector3 localscale = transform.localScale;
+						localscale.x *= -1;
+						transform.localScale = localscale;
+					}
 				}
 				else {
-					// going left
+					if (facingLeft != true) {
+						facingLeft = true;
+						Vector3 localscale = transform.localScale;
+						localscale.x *= -1;
+						transform.localScale = localscale;
+					}
 				}
 
 				// check for reaching the target via x only
@@ -69,17 +83,10 @@ public class AdventureController : MonoBehaviour {
 				if (minX < curX && curX < maxX) {
 					targetReached();
 				}
-				else if (minX > curX) {
-					translationvector.x += translationdistance;
-				}
 				else {
-					translationvector.x -= translationdistance;
+					animator.SetBool("isWalking", true);
 				}
 			}
-		}
-		else {
-			// play the idle animation
-			// TODO: ANIMATION
 		}
 	}
 }
