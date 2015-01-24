@@ -7,7 +7,7 @@ public class AdventureController : MonoBehaviour {
 	public SmartObject target = null;
 	public float walkspeed = 1.0f;
 	public Animator animator;
-	private bool facingLeft = true;
+	public bool facingLeft = true;
 
 	// Use this for initialization
 	void Start () {

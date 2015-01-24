@@ -10,6 +10,9 @@ public class SmartObjectManager : MonoBehaviour {
 	private SceneFader sceneFader;
 	private Animator animator;
 
+	public List<AdventureController> characters = new List<AdventureController>();
+	private int currentCharacter = 0;
+
 	// UNUSED NOW
 	//private SelectionUI selectionUI;
 
@@ -17,6 +20,10 @@ public class SmartObjectManager : MonoBehaviour {
 	private SelectionText selectionText;
 
 	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
+
+	void Awake() {
+
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -33,8 +40,15 @@ public class SmartObjectManager : MonoBehaviour {
 		sceneFader = FindObjectOfType<SceneFader>();
 
 		if (savestate.Count > 0) {
+			setNextCharacter();
 			loadFromSaveState();
 		}
+	}
+
+	void setNextCharacter() {
+		characters[currentCharacter].gameObject.SetActive(false);
+		currentCharacter++;
+		characters[currentCharacter].gameObject.SetActive(true);
 	}
 	
 	// Update is called once per frame
@@ -96,6 +110,7 @@ public class SmartObjectManager : MonoBehaviour {
 		if (chosentriplet == null) {
 			// default failstate
 			print("WE FAILED TO DO THINGS");
+			endScene(null);
 		}
 		else {
 			print("WE ARE DOING THE THINGS");
