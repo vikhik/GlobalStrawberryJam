@@ -37,8 +37,12 @@ public class SceneFader : MonoBehaviour {
 		fadeImageUI.color = Color.clear;
 	}
 
-	public void endScene(string endingText) {
+	public void endScene(string endingText, string targetlevel = null) {
 		endingTextUI.text = endingText;
+
+		if (targetlevel != null) {
+			nextLevel = targetlevel;
+		}
 
 		StartCoroutine(FadeOut());
 	}

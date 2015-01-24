@@ -12,16 +12,14 @@ public class SmartObject : MonoBehaviour {
 	public string description;
 	public bool selectable = false;
 	public bool selected = false;
-	static SmartObjectManager manager;
+	SmartObjectManager manager = null;
 
 	public ObjectState state = ObjectState.unused;
 
 	// Use this for initialization
 	void Start () {
-		if (SmartObject.manager == null) {
-			SmartObject.manager = GameObject.FindObjectOfType<SmartObjectManager>();
-		}
-		SmartObject.manager.addObject(this);
+		manager = GameObject.FindObjectOfType<SmartObjectManager>();
+		manager.addObject(this);
 	}
 
 	void Init() { 
@@ -71,10 +69,10 @@ public class SmartObject : MonoBehaviour {
 	public void touched() {
 		displayInformation();
 		if (this.selected) {
-			SmartObject.manager.deselectObject(this);
+			manager.deselectObject(this);
 		}
 		else if (this.selectable) {
-			SmartObject.manager.selectObject(this);
+			manager.selectObject(this);
 		}
 	}
 }
