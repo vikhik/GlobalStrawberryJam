@@ -1,0 +1,45 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: Char02Ludvig.png (512 x 512)
+# $TexturePacker:SmartUpdate:0989b0b83bc8f61e38f24abcc7796caf:2554dd348002dd97150c095886f5a8f3:66d18985e0c9338705cbee4ea1236eff$
+#
+
+Detective Ludvig VilgotGrab00;2;405;61;105;0.5;0.5
+Detective Ludvig VilgotGrab01;2;298;61;105;0.5;0.5
+Detective Ludvig VilgotGrab02;2;191;61;105;0.5;0.5
+Detective Ludvig VilgotGrab03;2;84;61;105;0.5;0.5
+Detective Ludvig VilgotGrab04;65;405;61;105;0.5;0.5
+Detective Ludvig VilgotGrab05;65;298;61;105;0.5;0.5
+Detective Ludvig VilgotGrab06;65;191;61;105;0.5;0.5
+Detective Ludvig VilgotGrab07;65;298;61;105;0.5;0.5
+Detective Ludvig VilgotGrab08;65;84;61;105;0.5;0.5
+Detective Ludvig VilgotGrab09;65;405;61;105;0.5;0.5
+Detective Ludvig VilgotGrab10;2;191;61;105;0.5;0.5
+Detective Ludvig VilgotGrab11;2;298;61;105;0.5;0.5
+Detective Ludvig VilgotGrab12;2;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle00;128;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle01;191;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle02;254;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle03;317;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle04;380;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle05;443;405;61;105;0.5;0.5
+Detective Ludvig VilgotIdle06;128;298;61;105;0.5;0.5
+Detective Ludvig VilgotIdle07;128;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk00;128;84;61;105;0.5;0.5
+Detective Ludvig VilgotWalk01;191;298;61;105;0.5;0.5
+Detective Ludvig VilgotWalk02;191;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk03;191;84;61;105;0.5;0.5
+Detective Ludvig VilgotWalk04;254;298;61;105;0.5;0.5
+Detective Ludvig VilgotWalk05;317;298;61;105;0.5;0.5
+Detective Ludvig VilgotWalk06;380;298;61;105;0.5;0.5
+Detective Ludvig VilgotWalk07;443;298;61;105;0.5;0.5
+Detective Ludvig VilgotWalk08;254;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk09;254;84;61;105;0.5;0.5
+Detective Ludvig VilgotWalk10;317;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk11;380;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk12;443;191;61;105;0.5;0.5
+Detective Ludvig VilgotWalk13;317;84;61;105;0.5;0.5
