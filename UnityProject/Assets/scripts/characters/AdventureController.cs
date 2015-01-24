@@ -6,15 +6,18 @@ public class AdventureController : MonoBehaviour {
 	public WalkingArea walkingarea;
 	public SmartObject target = null;
 	public float walkspeed = 1.0f;
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		walkingarea = FindObjectOfType<WalkingArea>();
+		animator = GetComponent<Animator>();
 	}
 
 	void targetReached() {
 		target.touched();
 		target = null;
+		animator.SetBool("isWalking", false);
 	}
 	
 	// Update is called once per frame
@@ -53,13 +56,13 @@ public class AdventureController : MonoBehaviour {
 
 				transform.Translate(translationvector.normalized * translationdistance);
 
-				// TODO: ANIMATION
-				if (translationvector.x > 0) {
-					// going right
-				}
-				else {
-					// going left
-				}
+				animator.SetBool("isWalking", true);
+				//if (translationvector.x > 0) {
+				//	// going right
+				//}
+				//else {
+				//	// going left
+				//}
 
 				// check for reaching the target via x only
 				float curX = collider2D.bounds.center.x;
@@ -76,10 +79,6 @@ public class AdventureController : MonoBehaviour {
 					translationvector.x -= translationdistance;
 				}
 			}
-		}
-		else {
-			// play the idle animation
-			// TODO: ANIMATION
 		}
 	}
 }
