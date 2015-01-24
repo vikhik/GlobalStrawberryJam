@@ -27,20 +27,26 @@ public class SmartObject : MonoBehaviour {
 	void Init() { 
 	}
 	
+	
 	// Update is called once per frame
 	void Update () {
 		// if this object is selectable
 		if (selectable) {
 			if (selected) {
 				// activate visual effect for selected object
-
+				
+				renderer.material.color = Color.yellow;
+				
 			}
 			else {
 				// activate visual effect for selectable object
-
+				
+				renderer.material.color = Color.white;
+				
 			}
 		}
 	}
+
 
 	void OnMouseDown() {
 		FindObjectOfType<AdventureController>().target = this;
