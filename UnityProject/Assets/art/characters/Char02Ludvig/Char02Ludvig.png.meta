@@ -81,352 +81,352 @@ TextureImporter:
     - name: Detective Ludvig VilgotGrab00
       rect:
         serializedVersion: 2
-        x: 2
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 74
+        y: 128
+        width: 30
+        height: 93
+      alignment: 9
+      pivot: {x: .483333319, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab01
       rect:
         serializedVersion: 2
-        x: 2
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 166
+        y: 129
+        width: 30
+        height: 93
+      alignment: 9
+      pivot: {x: .483333319, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab02
       rect:
         serializedVersion: 2
-        x: 2
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 42
+        y: 42
+        width: 30
+        height: 94
+      alignment: 9
+      pivot: {x: .483333319, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab03
       rect:
         serializedVersion: 2
-        x: 2
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 74
+        y: 33
+        width: 29
+        height: 93
+      alignment: 9
+      pivot: {x: .465517253, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab04
       rect:
         serializedVersion: 2
-        x: 65
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 136
+        y: 36
+        width: 30
+        height: 91
+      alignment: 9
+      pivot: {x: .483333319, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab05
       rect:
         serializedVersion: 2
-        x: 65
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 217
+        y: 419
+        width: 37
+        height: 91
+      alignment: 9
+      pivot: {x: .364864856, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab06
       rect:
         serializedVersion: 2
-        x: 65
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 207
+        y: 138
+        width: 39
+        height: 91
+      alignment: 9
+      pivot: {x: .371794879, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab07
       rect:
         serializedVersion: 2
-        x: 65
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 217
+        y: 419
+        width: 37
+        height: 91
+      alignment: 9
+      pivot: {x: .364864856, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab08
       rect:
         serializedVersion: 2
-        x: 65
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2
+        y: 226
+        width: 30
+        height: 91
+      alignment: 9
+      pivot: {x: .483333319, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab09
       rect:
         serializedVersion: 2
-        x: 65
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 136
+        y: 36
+        width: 30
+        height: 91
+      alignment: 9
+      pivot: {x: .483333319, y: .543956041}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab10
       rect:
         serializedVersion: 2
-        x: 2
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 42
+        y: 42
+        width: 30
+        height: 94
+      alignment: 9
+      pivot: {x: .483333319, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab11
       rect:
         serializedVersion: 2
-        x: 2
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 166
+        y: 129
+        width: 30
+        height: 93
+      alignment: 9
+      pivot: {x: .483333319, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotGrab12
       rect:
         serializedVersion: 2
-        x: 2
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 74
+        y: 128
+        width: 30
+        height: 93
+      alignment: 9
+      pivot: {x: .483333319, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle00
       rect:
         serializedVersion: 2
-        x: 128
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 125
+        y: 225
+        width: 39
+        height: 93
+      alignment: 9
+      pivot: {x: .371794879, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle01
       rect:
         serializedVersion: 2
-        x: 191
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 125
+        y: 320
+        width: 39
+        height: 94
+      alignment: 9
+      pivot: {x: .371794879, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle02
       rect:
         serializedVersion: 2
-        x: 254
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 176
+        y: 415
+        width: 39
+        height: 95
+      alignment: 9
+      pivot: {x: .371794879, y: .521052659}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle03
       rect:
         serializedVersion: 2
-        x: 317
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2
+        y: 319
+        width: 39
+        height: 95
+      alignment: 9
+      pivot: {x: .371794879, y: .521052659}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle04
       rect:
         serializedVersion: 2
-        x: 380
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 43
+        y: 319
+        width: 39
+        height: 95
+      alignment: 9
+      pivot: {x: .371794879, y: .521052659}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle05
       rect:
         serializedVersion: 2
-        x: 443
-        y: 405
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 84
+        y: 319
+        width: 39
+        height: 95
+      alignment: 9
+      pivot: {x: .371794879, y: .521052659}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle06
       rect:
         serializedVersion: 2
-        x: 128
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 166
+        y: 319
+        width: 39
+        height: 94
+      alignment: 9
+      pivot: {x: .371794879, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotIdle07
       rect:
         serializedVersion: 2
-        x: 128
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 198
+        y: 43
+        width: 30
+        height: 93
+      alignment: 9
+      pivot: {x: .483333319, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk00
       rect:
         serializedVersion: 2
-        x: 128
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 207
+        y: 231
+        width: 39
+        height: 93
+      alignment: 9
+      pivot: {x: .371794879, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk01
       rect:
         serializedVersion: 2
-        x: 191
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 92
+        y: 416
+        width: 40
+        height: 94
+      alignment: 9
+      pivot: {x: .387499988, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk02
       rect:
         serializedVersion: 2
-        x: 191
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 217
+        y: 326
+        width: 37
+        height: 91
+      alignment: 9
+      pivot: {x: .337837845, y: .521978021}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk03
       rect:
         serializedVersion: 2
-        x: 191
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2
+        y: 416
+        width: 43
+        height: 94
+      alignment: 9
+      pivot: {x: .430232555, y: .547872365}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk04
       rect:
         serializedVersion: 2
-        x: 254
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 166
+        y: 224
+        width: 39
+        height: 93
+      alignment: 9
+      pivot: {x: .371794879, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk05
       rect:
         serializedVersion: 2
-        x: 317
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2
+        y: 42
+        width: 38
+        height: 94
+      alignment: 9
+      pivot: {x: .355263144, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk06
       rect:
         serializedVersion: 2
-        x: 380
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 47
+        y: 416
+        width: 43
+        height: 94
+      alignment: 9
+      pivot: {x: .430232555, y: .547872365}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk07
       rect:
         serializedVersion: 2
-        x: 443
-        y: 298
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 105
+        y: 33
+        width: 29
+        height: 93
+      alignment: 9
+      pivot: {x: .5, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk08
       rect:
         serializedVersion: 2
-        x: 254
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 74
+        y: 223
+        width: 30
+        height: 94
+      alignment: 9
+      pivot: {x: .516666651, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk09
       rect:
         serializedVersion: 2
-        x: 254
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 138
+        y: 132
+        width: 26
+        height: 91
+      alignment: 9
+      pivot: {x: .480769217, y: .521978021}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk10
       rect:
         serializedVersion: 2
-        x: 317
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 168
+        y: 34
+        width: 28
+        height: 93
+      alignment: 9
+      pivot: {x: .517857134, y: .532258093}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk11
       rect:
         serializedVersion: 2
-        x: 380
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 34
+        y: 225
+        width: 28
+        height: 92
+      alignment: 9
+      pivot: {x: .517857134, y: .516304374}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk12
       rect:
         serializedVersion: 2
-        x: 443
-        y: 191
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 106
+        y: 129
+        width: 30
+        height: 94
+      alignment: 9
+      pivot: {x: .449999988, y: .526595771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Detective Ludvig VilgotWalk13
       rect:
         serializedVersion: 2
-        x: 317
-        y: 84
-        width: 61
-        height: 105
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 134
+        y: 416
+        width: 40
+        height: 94
+      alignment: 9
+      pivot: {x: .462500006, y: .547872365}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
