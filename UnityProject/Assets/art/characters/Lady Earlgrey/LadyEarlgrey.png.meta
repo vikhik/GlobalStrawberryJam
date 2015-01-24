@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: dfc911b64197f48e8bf7388d61447ba2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LadyEarlgreyGrab00
+    21300002: LadyEarlgreyGrab01
+    21300004: LadyEarlgreyGrab02
+    21300006: LadyEarlgreyGrab03
+    21300008: LadyEarlgreyGrab04
+    21300010: LadyEarlgreyGrab05
+    21300012: LadyEarlgreyGrab06
+    21300014: LadyEarlgreyIdle00
+    21300016: LadyEarlgreyIdle01
+    21300018: LadyEarlgreyIdle02
+    21300020: LadyEarlgreyIdle03
+    21300022: LadyEarlgreyIdle04
+    21300024: LadyEarlgreyIdle05
+    21300026: LadyEarlgreyIdle06
+    21300028: LadyEarlgreyIdle07
+    21300030: LadyEarlgreyIdle08
+    21300032: LadyEarlgreyIdle09
+    21300034: LadyEarlgreyWalk00
+    21300036: LadyEarlgreyWalk01
+    21300038: LadyEarlgreyWalk02
+    21300040: LadyEarlgreyWalk03
+    21300042: LadyEarlgreyWalk04
+    21300044: LadyEarlgreyWalk05
+    21300046: LadyEarlgreyWalk06
+    21300048: LadyEarlgreyWalk07
+    21300050: LadyEarlgreyWalk08
+    21300052: LadyEarlgreyWalk09
+    21300054: LadyEarlgreyWalk10
+    21300056: LadyEarlgreyWalk11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LadyEarlgreyGrab00
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 232
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.055555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab01
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 148
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.0666666701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab02
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 240
+        width: 47
+        height: 92
+      alignment: 9
+      pivot: {x: .457446814, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab03
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 324
+        width: 47
+        height: 92
+      alignment: 9
+      pivot: {x: .414893627, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab04
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 234
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: .457446814, y: -.0549450554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab05
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 418
+        width: 52
+        height: 92
+      alignment: 9
+      pivot: {x: .490384609, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyGrab06
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 418
+        width: 54
+        height: 92
+      alignment: 9
+      pivot: {x: .490740746, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle00
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 232
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.055555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 231
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: .478723407, y: -.0549450554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle02
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 231
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: .478723407, y: -.0549450554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle03
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 324
+        width: 47
+        height: 92
+      alignment: 9
+      pivot: {x: .478723407, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle04
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 327
+        width: 47
+        height: 93
+      alignment: 9
+      pivot: {x: .478723407, y: -.0537634417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle05
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 324
+        width: 47
+        height: 92
+      alignment: 9
+      pivot: {x: .478723407, y: -.0543478243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle06
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 231
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: .478723407, y: -.0549450554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle07
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 231
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: .478723407, y: -.0549450554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle08
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 232
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.055555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyIdle09
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 143
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .478723407, y: -.0561797768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk00
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 232
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.055555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk01
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 141
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .457446814, y: -.0674157292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk02
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 140
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .43617022, y: -.078651689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk03
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 149
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .414893627, y: -.0898876414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk04
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 422
+        width: 48
+        height: 88
+      alignment: 9
+      pivot: {x: .40625, y: -.0795454532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk05
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 423
+        width: 48
+        height: 87
+      alignment: 9
+      pivot: {x: .40625, y: -.0574712642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk06
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 423
+        width: 48
+        height: 87
+      alignment: 9
+      pivot: {x: .40625, y: -.0574712642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk07
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 334
+        width: 48
+        height: 87
+      alignment: 9
+      pivot: {x: .40625, y: -.068965517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk08
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 422
+        width: 48
+        height: 88
+      alignment: 9
+      pivot: {x: .40625, y: -.0795454532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk09
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 58
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .414893627, y: -.0898876414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 57
+        width: 47
+        height: 89
+      alignment: 9
+      pivot: {x: .457446814, y: -.0674157292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LadyEarlgreyWalk11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 232
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: .478723407, y: -.055555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
