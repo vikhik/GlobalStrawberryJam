@@ -30,7 +30,7 @@ public class Triplet : MonoBehaviour {
 		}
 
 		if (endScene) {
-			SendMessage("finishScene", sceneTransitionText);
+			//SendMessage("finishScene", sceneTransitionText);
 		}
 	}
 }
