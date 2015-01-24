@@ -8,6 +8,7 @@ public class SmartObjectManager : MonoBehaviour {
 	private List<SmartObject> selection = new List<SmartObject>();
 	private List<Triplet> knowntriplets = new List<Triplet>();
 	private SelectionUI selectionUI;
+	private SceneFader sceneFader;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class SmartObjectManager : MonoBehaviour {
 			knowntriplets.Add(triplet);
 		}
 		selectionUI = FindObjectOfType<SelectionUI>();
+		sceneFader = FindObjectOfType<SceneFader>();
 	}
 	
 	// Update is called once per frame
@@ -76,7 +78,10 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 		else {
 			print("WE ARE DOING THE THINGS");
-			chosentriplet.useTriplet();
+			string sceneEnding = chosentriplet.useTriplet();
+
+			if (sceneFader)
+				sceneFader.endScene(sceneEnding);
 		}
 	}
 

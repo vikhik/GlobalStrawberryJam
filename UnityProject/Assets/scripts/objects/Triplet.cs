@@ -20,7 +20,7 @@ public class Triplet : MonoBehaviour {
 		return selected.Contains(element0) && selected.Contains(element1) && selected.Contains(element2);
 	}
 
-	public void useTriplet() {
+	public string useTriplet() {
 		element0.state = newElement0State;
 		element1.state = newElement1State;
 		element2.state = newElement2State;
@@ -30,7 +30,9 @@ public class Triplet : MonoBehaviour {
 		}
 
 		if (endScene) {
-			//SendMessage("finishScene", sceneTransitionText);
+			return sceneTransitionText;
 		}
+
+		return null;
 	}
 }
