@@ -43,6 +43,28 @@ public class SmartObject : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
+		FindObjectOfType<AdventureController>().target = this;
+
+	}
+
+	void displayInformation() {
+
+	}
+
+	void hideInformation() {
+
+	}
+
+	// SELECTION BOX HAS THIS:
+	//if (this.selected) {
+	//	SmartObject.manager.deselectObject(this);
+	//}
+	//else if (this.selectable) {
+	//	SmartObject.manager.selectObject(this);
+	//}
+
+	public void touched() {
+		displayInformation();
 		if (this.selected) {
 			SmartObject.manager.deselectObject(this);
 		}
