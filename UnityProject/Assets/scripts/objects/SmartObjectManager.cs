@@ -7,6 +7,7 @@ public class SmartObjectManager : MonoBehaviour {
 	private List<SmartObject> collection = new List<SmartObject>();
 	private List<SmartObject> selection = new List<SmartObject>();
 	private List<Triplet> knowntriplets = new List<Triplet>();
+	private SelectionUI selectionUI;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,7 @@ public class SmartObjectManager : MonoBehaviour {
 		foreach (Triplet triplet in alltriplets) {
 			knowntriplets.Add(triplet);
 		}
+		selectionUI = FindObjectOfType<SelectionUI>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +36,7 @@ public class SmartObjectManager : MonoBehaviour {
 			print("SELECTED: " + smartobject);
 
 			// TODO: add smartobject to object-tray display
+			selectionUI.selectObject(smartobject);
 		}
 		else {
 			// TODO: make object-tray display flash red or otherwise indicate to the player they are dumb
@@ -44,6 +47,7 @@ public class SmartObjectManager : MonoBehaviour {
 		selection.Remove(smartobject);
 		smartobject.selected = false;
 		print("DESELECTED: " + smartobject);
+		selectionUI.deselectObject(smartobject);
 	}
 
 	public void whatDoWeDoNow() {
