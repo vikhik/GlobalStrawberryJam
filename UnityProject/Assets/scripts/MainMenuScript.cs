@@ -6,6 +6,7 @@ public class MainMenuScript : MonoBehaviour {
 	public Texture backgroundTexture;
 	
 	public GUIStyle button1;
+	public GUIStyle button2;
 	
 	void OnGUI(){
 		
@@ -17,10 +18,6 @@ public class MainMenuScript : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .5f + (Screen.height * .15f), Screen.width * .5f, Screen.height * .1f), "", button1)) {
 			print ("Clicked Credits");
-		}
-		
-		if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .5f + (Screen.height * .3f), Screen.width * .5f, Screen.height * .1f), "", button1)) {
-			print ("Clicked Exit");
 		}
 	}
 }
