@@ -50,7 +50,6 @@ public class SmartObject : MonoBehaviour {
 
 	void OnMouseDown() {
 		FindObjectOfType<AdventureController>().target = this;
-
 	}
 
 	void displayInformation() {
