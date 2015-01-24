@@ -56,6 +56,7 @@ TextureImporter:
     21300102: btnNOW06
     21300104: btnNOW07
     21300106: btnNOWdown
+    21300108: btnNOWDark
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -230,8 +231,8 @@ TextureImporter:
     - name: LadyEarlgreyDeath13
       rect:
         serializedVersion: 2
-        x: 400
-        y: 206
+        x: 313
+        y: 166
         width: 59
         height: 64
       alignment: 9
@@ -627,11 +628,21 @@ TextureImporter:
       alignment: 9
       pivot: {x: .5, y: -.0263157897}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: btnNOWdown
+    - name: btnNOWDark
       rect:
         serializedVersion: 2
         x: 400
         y: 272
+        width: 68
+        height: 38
+      alignment: 9
+      pivot: {x: .5, y: -.0263157897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: btnNOWdown
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 232
         width: 68
         height: 38
       alignment: 9

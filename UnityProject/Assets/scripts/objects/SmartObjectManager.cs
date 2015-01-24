@@ -9,6 +9,7 @@ public class SmartObjectManager : MonoBehaviour {
 	private List<Triplet> knowntriplets = new List<Triplet>();
 	private SelectionUI selectionUI;
 	private SceneFader sceneFader;
+	private Animator animator;
 
 	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
 
@@ -18,7 +19,11 @@ public class SmartObjectManager : MonoBehaviour {
 		foreach (Triplet triplet in alltriplets) {
 			knowntriplets.Add(triplet);
 		}
+
+		animator = GetComponent<Animator>();
+		
 		selectionUI = FindObjectOfType<SelectionUI>();
+	
 		sceneFader = FindObjectOfType<SceneFader>();
 
 		if (savestate.Count > 0) {
@@ -30,9 +35,11 @@ public class SmartObjectManager : MonoBehaviour {
 	void Update () {
 		if (selection.Count == 3) {
 			// Make NOW button usable looking
+			animator.SetBool("active", true);
 		}
 		else {
 			// Make NOW button not-usable looking
+			animator.SetBool("active", false);
 		}
 	}
 
@@ -43,7 +50,6 @@ public class SmartObjectManager : MonoBehaviour {
 
 			print("SELECTED: " + smartobject);
 
-			// TODO: add smartobject to object-tray display
 			selectionUI.selectObject(smartobject);
 		}
 		else {
