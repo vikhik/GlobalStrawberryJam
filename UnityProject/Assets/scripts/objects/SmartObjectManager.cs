@@ -8,6 +8,9 @@ public class SmartObjectManager : MonoBehaviour {
 	private List<SmartObject> selection = new List<SmartObject>();
 	private List<Triplet> knowntriplets = new List<Triplet>();
 	private SelectionUI selectionUI;
+	private SceneFader sceneFader;
+
+	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +19,11 @@ public class SmartObjectManager : MonoBehaviour {
 			knowntriplets.Add(triplet);
 		}
 		selectionUI = FindObjectOfType<SelectionUI>();
+		sceneFader = FindObjectOfType<SceneFader>();
+
+		if (savestate.Count > 0) {
+			loadFromSaveState();
+		}
 	}
 	
 	// Update is called once per frame
@@ -76,7 +84,9 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 		else {
 			print("WE ARE DOING THE THINGS");
-			chosentriplet.useTriplet();
+			string sceneEnding = chosentriplet.useTriplet();
+
+			endScene(sceneEnding);
 		}
 	}
 
@@ -91,17 +101,39 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 
 		for (var i = 0; i < number; i++) {
+			// find a usable random smartobject
 			int randint = Random.Range(0, collection.Count);
-
-			// find a random unused/inuse object
-			while (collection[randint].state == ObjectState.used) {
+			while (collection[randint].state == ObjectState.used || !collection[randint].enabled) {
 				randint = Random.Range(0, collection.Count);
 			}
-			
+
+			// and let it be selectable
 			collection[randint].selectable = true;
 		}
 	}
 	void OnMouseDown() {
 		whatDoWeDoNow();
+	}
+
+	void endScene(string sceneEnding) {
+		generateSaveState();
+		
+		if (sceneFader)
+			sceneFader.endScene(sceneEnding);
+	}
+
+	void generateSaveState() {
+		foreach (SmartObject smartobject in collection) {
+			savestate.Add(smartobject.getSnapshot());
+		}
+	}
+
+	void loadFromSaveState() {
+		var allsmartobjects = FindObjectsOfType<SmartObject>();
+		foreach (SmartObjectSnapshot snapshot in savestate) {
+			foreach (SmartObject smartobject in allsmartobjects) {
+				smartobject.setFromSnapshot(snapshot);
+			}
+		}
 	}
 }
