@@ -14,9 +14,10 @@ public class MainMenuScript : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .5f, Screen.width * .5f, Screen.height * .1f), "", button1)) {
 			print ("Clicked Play Game");
+			Application.LoadLevel ("Room01");
 		}
 		
-		if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .5f + (Screen.height * .15f), Screen.width * .5f, Screen.height * .1f), "", button1)) {
+		if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .5f + (Screen.height * .15f), Screen.width * .5f, Screen.height * .1f), "", button2)) {
 			print ("Clicked Credits");
 		}
 	}
