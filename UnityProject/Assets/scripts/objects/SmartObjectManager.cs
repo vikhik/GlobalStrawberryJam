@@ -31,7 +31,7 @@ public class SmartObjectManager : MonoBehaviour {
 			selection.Add(smartobject);
 			smartobject.selected = true;
 
-			print("SELECTED" + smartobject);
+			print("SELECTED: " + smartobject);
 
 			// TODO: add smartobject to object-tray display
 		}
@@ -43,7 +43,7 @@ public class SmartObjectManager : MonoBehaviour {
 	public void deselectObject(SmartObject smartobject) {
 		selection.Remove(smartobject);
 		smartobject.selected = false;
-		print("DESELECTED" + smartobject);
+		print("DESELECTED: " + smartobject);
 	}
 
 	public void whatDoWeDoNow() {
@@ -71,7 +71,10 @@ public class SmartObjectManager : MonoBehaviour {
 			print("WE FAILED TO DO THINGS");
 		}
 
-		selection.Clear();
+		while (selection.Count > 0) {
+			deselectObject(selection[0]);
+
+		}
 	}
 
 	public void addObject(SmartObject smartobject) {
