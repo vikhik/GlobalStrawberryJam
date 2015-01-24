@@ -18,6 +18,7 @@ public class AdventureController : MonoBehaviour {
 	void targetReached() {
 		target.touched();
 		target = null;
+		animator.SetBool("isWalking", false);
 		animator.SetTrigger("grabObject");
 	}
 	
@@ -57,7 +58,6 @@ public class AdventureController : MonoBehaviour {
 
 				transform.Translate(translationvector.normalized * translationdistance);
 
-				animator.SetBool("isWalking", true);
 				if (translationvector.x > 0) {
 					if (facingLeft != false) {
 						facingLeft = false;
@@ -83,11 +83,8 @@ public class AdventureController : MonoBehaviour {
 				if (minX < curX && curX < maxX) {
 					targetReached();
 				}
-				else if (minX > curX) {
-					translationvector.x += translationdistance;
-				}
 				else {
-					translationvector.x -= translationdistance;
+					animator.SetBool("isWalking", true);
 				}
 			}
 		}
