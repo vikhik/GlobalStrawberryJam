@@ -7,6 +7,7 @@ public class AdventureController : MonoBehaviour {
 	public SmartObject target = null;
 	public float walkspeed = 1.0f;
 	public Animator animator;
+	private bool facingLeft = true;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,7 @@ public class AdventureController : MonoBehaviour {
 	void targetReached() {
 		target.touched();
 		target = null;
-		animator.SetBool("isWalking", false);
+		animator.SetTrigger("grabObject");
 	}
 	
 	// Update is called once per frame
@@ -57,12 +58,22 @@ public class AdventureController : MonoBehaviour {
 				transform.Translate(translationvector.normalized * translationdistance);
 
 				animator.SetBool("isWalking", true);
-				//if (translationvector.x > 0) {
-				//	// going right
-				//}
-				//else {
-				//	// going left
-				//}
+				if (translationvector.x > 0) {
+					if (facingLeft != false) {
+						facingLeft = false;
+						Vector3 localscale = transform.localScale;
+						localscale.x *= -1;
+						transform.localScale = localscale;
+					}
+				}
+				else {
+					if (facingLeft != true) {
+						facingLeft = true;
+						Vector3 localscale = transform.localScale;
+						localscale.x *= -1;
+						transform.localScale = localscale;
+					}
+				}
 
 				// check for reaching the target via x only
 				float curX = collider2D.bounds.center.x;
