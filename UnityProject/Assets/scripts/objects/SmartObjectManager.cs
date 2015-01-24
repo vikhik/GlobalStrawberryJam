@@ -18,7 +18,12 @@ public class SmartObjectManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (selection.Count == 3) {
+			// Make NOW button usable looking
+		}
+		else {
+			// Make NOW button not-usable looking
+		}
 	}
 
 	public void selectObject(SmartObject smartobject) {
@@ -58,13 +63,15 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 
 		if (chosentriplet != null) {
-			print("WE DID THE THINGS");
 			chosentriplet.useTriplet();
+			print("WE DID THE THINGS");
 		}
 		else {
 			// default failstate
 			print("WE FAILED TO DO THINGS");
 		}
+
+		selection.Clear();
 	}
 
 	public void addObject(SmartObject smartobject) {
