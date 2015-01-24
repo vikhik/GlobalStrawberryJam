@@ -1,47 +1,111 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class SceneFader : MonoBehaviour {
 
-	bool ending = false;
+	public float fadeDuration = 3f;
+	public float textFadeDuration = 1f;
+	public float textDisplayDuration = 1f;
 
-	string endingtext;
-	public float endTime = 5.0f;
-	public string nextScene = "MainMenu";
+	public string nextLevel = "Room01";
 
-	float timer = 0.0f;
+	Image fadeImageUI;
+	Text endingTextUI;
 
 	// Use this for initialization
 	void Start () {
-		fadeIn ();
+		fadeImageUI = GetComponentInChildren<Image>();
+		endingTextUI = GetComponentInChildren<Text>();
+
+		StartCoroutine(FadeIn());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (ending) {
-			doEnding();
+
+	private IEnumerator FadeIn() {
+
+		float progress = 0;
+
+		Color startColor = fadeImageUI.color;
+
+		while (progress < fadeDuration) {
+			progress += Time.deltaTime;
+			fadeImageUI.color = Color.Lerp(startColor, Color.clear, progress / fadeDuration);
+
+			yield return null;
 		}
+
+		fadeImageUI.color = Color.clear;
 	}
 
-	void fadeIn() {
+	public void endScene(string endingText) {
+		endingTextUI.text = endingText;
 
+		StartCoroutine(FadeOut());
 	}
 
-	void fadeOut() {
+	private IEnumerator FadeOut() {
 
-	}
+		float progress = 0;
 
-	void doEnding() {
-		timer += Time.deltaTime;
+		Color startColor = fadeImageUI.color;
 
-		if (timer > endTime) {
-			Application.LoadLevel(nextScene);
-			ending = false;
+		while (progress < fadeDuration) {
+			progress += Time.deltaTime;
+			fadeImageUI.color = Color.Lerp(startColor, Color.black, progress / fadeDuration);
+
+			yield return null;
 		}
+
+		fadeImageUI.color = Color.black;
+
+		StartCoroutine(TextIn());
 	}
 
-	public void endScene(string endingtext) {
-		this.endingtext = endingtext;
-		fadeOut ();
+	private IEnumerator TextIn() {
+
+		float progress = 0;
+
+		Color startColor = endingTextUI.color;
+
+		while (progress < textFadeDuration) {
+			progress += Time.deltaTime;
+			endingTextUI.color = Color.Lerp(startColor, Color.white, progress / textFadeDuration);
+
+			yield return null;
+		}
+
+		endingTextUI.color = Color.white;
+
+		StartCoroutine(DisplayText());
+	}
+
+	private IEnumerator DisplayText() {
+
+		float progress = 0;
+
+		while (progress < textDisplayDuration) {
+			progress += Time.deltaTime;
+			yield return null;
+		}
+
+		StartCoroutine(TextOut());
+	}
+
+	private IEnumerator TextOut() {
+
+		float progress = 0;
+
+		Color startColor = endingTextUI.color;
+
+		while (progress < textFadeDuration) {
+			progress += Time.deltaTime;
+			endingTextUI.color = Color.Lerp(startColor, Color.clear, progress / textFadeDuration);
+
+			yield return null;
+		}
+
+		endingTextUI.color = Color.clear;
+
+		Application.LoadLevel(nextLevel);
 	}
 }
