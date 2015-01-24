@@ -7,9 +7,14 @@ public class SmartObjectManager : MonoBehaviour {
 	private List<SmartObject> collection = new List<SmartObject>();
 	private List<SmartObject> selection = new List<SmartObject>();
 	private List<Triplet> knowntriplets = new List<Triplet>();
-	private SelectionUI selectionUI;
 	private SceneFader sceneFader;
 	private Animator animator;
+
+	// UNUSED NOW
+	//private SelectionUI selectionUI;
+
+	// REPLACED WITH:
+	private SelectionText selectionText;
 
 	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
 
@@ -22,7 +27,8 @@ public class SmartObjectManager : MonoBehaviour {
 
 		animator = GetComponent<Animator>();
 		
-		selectionUI = FindObjectOfType<SelectionUI>();
+		//selectionUI = FindObjectOfType<SelectionUI>();
+		selectionText = FindObjectOfType<SelectionText>();
 	
 		sceneFader = FindObjectOfType<SceneFader>();
 
@@ -50,7 +56,8 @@ public class SmartObjectManager : MonoBehaviour {
 
 			print("SELECTED: " + smartobject);
 
-			selectionUI.selectObject(smartobject);
+			//selectionUI.selectObject(smartobject);
+			selectionText.updateSelection(selection);
 		}
 		else {
 			// TODO: make object-tray display flash red or otherwise indicate to the player they are dumb
@@ -61,7 +68,8 @@ public class SmartObjectManager : MonoBehaviour {
 		selection.Remove(smartobject);
 		smartobject.selected = false;
 		print("DESELECTED: " + smartobject);
-		selectionUI.deselectObject(smartobject);
+		//selectionUI.deselectObject(smartobject);
+		selectionText.updateSelection(selection);
 	}
 
 	public void whatDoWeDoNow() {
@@ -83,6 +91,7 @@ public class SmartObjectManager : MonoBehaviour {
 		while (selection.Count > 0) {
 			deselectObject(selection[0]);
 		}
+		selectionText.updateSelection(selection);
 
 		if (chosentriplet == null) {
 			// default failstate
