@@ -18,6 +18,7 @@ public class SmartObject : MonoBehaviour {
 	public bool selectable = false;
 	public bool selected = false;
 	SmartObjectManager manager = null;
+	DescriptionText descriptiontext;
 
 	public ObjectState state = ObjectState.unused;
 
@@ -27,7 +28,7 @@ public class SmartObject : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		manager = GameObject.FindObjectOfType<SmartObjectManager>();
+		manager = FindObjectOfType<SmartObjectManager>();
 		manager.addObject(this);
 
 		if (state != ObjectState.unused) {
@@ -37,6 +38,8 @@ public class SmartObject : MonoBehaviour {
 			// The default sprite for any SmartObject is the sprite that it is when unused
 			unusedSprite = GetComponent<SpriteRenderer>().sprite;
 		}
+
+		descriptiontext = FindObjectOfType<DescriptionText>();
 	}
 
 	// Update is called once per frame
@@ -62,14 +65,6 @@ public class SmartObject : MonoBehaviour {
 	void OnMouseDown() {
 		if (selectable)
 			FindObjectOfType<AdventureController>().target = this;
-	}
-
-	void displayInformation() {
-
-	}
-
-	void hideInformation() {
-
 	}
 
 	// SELECTION BOX HAS THIS:
@@ -114,12 +109,19 @@ public class SmartObject : MonoBehaviour {
 	}
 
 	public void touched() {
-		displayInformation();
 		if (this.selected) {
 			manager.deselectObject(this);
 		}
 		else if (this.selectable) {
 			manager.selectObject(this);
 		}
+	}
+
+	void OnMouseOver() {
+		descriptiontext.setString(description);
+	}
+
+	void OnMouseExit() {
+		descriptiontext.setString(null);
 	}
 }
