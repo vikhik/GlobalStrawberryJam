@@ -13,6 +13,9 @@ public class Triplet : MonoBehaviour {
 	/** If this is provided, this object's state will be set to unused after this triplet is performed */
 	public SmartObject newElement;
 
+	public bool endScene = true;
+	public string sceneTransitionText;
+
 	public bool isCorrectTriplet(List<SmartObject> selected) {
 		return selected.Contains(element0) && selected.Contains(element1) && selected.Contains(element2);
 	}
@@ -24,6 +27,10 @@ public class Triplet : MonoBehaviour {
 
 		if (newElement) {
 			newElement.state = ObjectState.unused;
+		}
+
+		if (endScene) {
+			SendMessage("finishScene", sceneTransitionText);
 		}
 	}
 }

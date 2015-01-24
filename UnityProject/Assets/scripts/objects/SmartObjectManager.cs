@@ -62,18 +62,17 @@ public class SmartObjectManager : MonoBehaviour {
 			}
 		}
 
-		if (chosentriplet != null) {
-			chosentriplet.useTriplet();
-			print("WE DID THE THINGS");
+		while (selection.Count > 0) {
+			deselectObject(selection[0]);
 		}
-		else {
+
+		if (chosentriplet == null) {
 			// default failstate
 			print("WE FAILED TO DO THINGS");
 		}
-
-		while (selection.Count > 0) {
-			deselectObject(selection[0]);
-
+		else {
+			print("WE ARE DOING THE THINGS");
+			chosentriplet.useTriplet();
 		}
 	}
 
