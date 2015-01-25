@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 36e8f0258c4524c4fb987ab46cd6b369
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Emmerich Hilderbrand Grab00
+    21300002: Emmerich Hilderbrand Grab01
+    21300004: Emmerich Hilderbrand Grab02
+    21300006: Emmerich Hilderbrand Grab03
+    21300008: Emmerich Hilderbrand Grab04
+    21300010: Emmerich Hilderbrand Grab05
+    21300012: Emmerich Hilderbrand Grab06
+    21300014: Emmerich Hilderbrand Grab07
+    21300016: Emmerich Hilderbrand Grab08
+    21300018: Emmerich Hilderbrand Grab09
+    21300020: Emmerich Hilderbrand Idle00
+    21300022: Emmerich Hilderbrand Idle01
+    21300024: Emmerich Hilderbrand Idle02
+    21300026: Emmerich Hilderbrand Idle03
+    21300028: Emmerich Hilderbrand Idle04
+    21300030: Emmerich Hilderbrand Idle05
+    21300032: Emmerich Hilderbrand Idle06
+    21300034: Emmerich Hilderbrand Walk00
+    21300036: Emmerich Hilderbrand Walk01
+    21300038: Emmerich Hilderbrand Walk02
+    21300040: Emmerich Hilderbrand Walk03
+    21300042: Emmerich Hilderbrand Walk04
+    21300044: Emmerich Hilderbrand Walk05
+    21300046: Emmerich Hilderbrand Walk06
+    21300048: Emmerich Hilderbrand Walk07
+    21300050: Emmerich Hilderbrand Walk08
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Emmerich Hilderbrand Grab00
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 414
+        width: 49
+        height: 96
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab01
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 312
+        width: 44
+        height: 97
+      alignment: 9
+      pivot: {x: 1.2954545, y: -.0412371121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab02
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 122
+        width: 41
+        height: 96
+      alignment: 9
+      pivot: {x: 1.36585367, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab03
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 118
+        width: 41
+        height: 95
+      alignment: 9
+      pivot: {x: 1.36585367, y: -.042105265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab04
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 218
+        width: 43
+        height: 96
+      alignment: 9
+      pivot: {x: 1.32558143, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab05
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 41
+        height: 96
+      alignment: 9
+      pivot: {x: 1.36585367, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab06
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 218
+        width: 43
+        height: 96
+      alignment: 9
+      pivot: {x: 1.32558143, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab07
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 118
+        width: 41
+        height: 95
+      alignment: 9
+      pivot: {x: 1.36585367, y: -.042105265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab08
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 122
+        width: 41
+        height: 96
+      alignment: 9
+      pivot: {x: 1.36585367, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Grab09
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 312
+        width: 44
+        height: 97
+      alignment: 9
+      pivot: {x: 1.2954545, y: -.0412371121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle00
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 316
+        width: 49
+        height: 96
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle01
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 412
+        width: 49
+        height: 98
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0408163257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle02
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 411
+        width: 49
+        height: 99
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0404040404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle03
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 410
+        width: 49
+        height: 100
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0399999991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle04
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 410
+        width: 49
+        height: 100
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0399999991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle05
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 412
+        width: 49
+        height: 98
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0408163257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Idle06
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 316
+        width: 49
+        height: 96
+      alignment: 9
+      pivot: {x: 1.1836735, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk00
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 414
+        width: 47
+        height: 96
+      alignment: 9
+      pivot: {x: 1.23404253, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 313
+        width: 44
+        height: 95
+      alignment: 9
+      pivot: {x: 1.2954545, y: -.0736842081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk02
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 43
+        height: 95
+      alignment: 9
+      pivot: {x: 1.27906978, y: -.0736842081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk03
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 217
+        width: 44
+        height: 94
+      alignment: 9
+      pivot: {x: 1.22727275, y: -.0744680837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk04
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 215
+        width: 43
+        height: 96
+      alignment: 9
+      pivot: {x: 1.23255813, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk05
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 214
+        width: 43
+        height: 96
+      alignment: 9
+      pivot: {x: 1.25581396, y: -.0416666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk06
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 313
+        width: 45
+        height: 97
+      alignment: 9
+      pivot: {x: 1.22222221, y: -.0412371121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk07
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 317
+        width: 47
+        height: 95
+      alignment: 9
+      pivot: {x: 1.21276593, y: -.042105265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Emmerich Hilderbrand Walk08
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 220
+        width: 47
+        height: 95
+      alignment: 9
+      pivot: {x: 1.21276593, y: -.042105265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
