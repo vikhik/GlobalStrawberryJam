@@ -3,7 +3,6 @@ using System.Collections;
 
 public enum ObjectState {
 	unused,
-	inuse,
 	used
 }
 
@@ -14,7 +13,9 @@ public struct SmartObjectSnapshot {
 
 public class SmartObject : MonoBehaviour {
 
-	public string description;
+	public string unusedDescription;
+	public string usedDescription;
+
 	public bool selectable = false;
 	public bool selected = false;
 	SmartObjectManager manager = null;
@@ -22,8 +23,6 @@ public class SmartObject : MonoBehaviour {
 
 	public ObjectState state = ObjectState.unused;
 
-	public Sprite unusedSprite = null;
-	public Sprite inuseSprite = null;
 	public Sprite usedSprite = null;
 
 	// Use this for initialization
@@ -33,10 +32,6 @@ public class SmartObject : MonoBehaviour {
 
 		if (state != ObjectState.unused) {
 			setState (state);
-		}
-		else {
-			// The default sprite for any SmartObject is the sprite that it is when unused
-			unusedSprite = GetComponent<SpriteRenderer>().sprite;
 		}
 
 		descriptiontext = FindObjectOfType<DescriptionText>();
@@ -77,13 +72,13 @@ public class SmartObject : MonoBehaviour {
 
 	public SmartObjectSnapshot getSnapshot() {
 		SmartObjectSnapshot snapshot = new SmartObjectSnapshot();
-		snapshot.id = name + description;
+		snapshot.id = name + unusedDescription;
 		snapshot.state = state;
 		return snapshot;
 	}
 
 	public void setFromSnapshot(SmartObjectSnapshot snapshot) {
-		if (snapshot.id == name + description) {
+		if (snapshot.id == name + unusedDescription) {
 			setState(snapshot.state);
 		}
 	}
@@ -92,10 +87,6 @@ public class SmartObject : MonoBehaviour {
 		state = newstate;
 
 		switch (state) {
-		case ObjectState.inuse:
-			GetComponent<SpriteRenderer>().sprite = inuseSprite;
-			break;
-
 		case ObjectState.used:
 			GetComponent<SpriteRenderer>().sprite = usedSprite;
 			selectable = false;
@@ -118,7 +109,14 @@ public class SmartObject : MonoBehaviour {
 	}
 
 	void OnMouseOver() {
-		descriptiontext.setString(description);
+		switch (state) {
+		case ObjectState.used:
+			descriptiontext.setString(usedDescription);
+			break;
+		case ObjectState.unused:
+			descriptiontext.setString(unusedDescription);
+			break;
+		}
 	}
 
 	void OnMouseExit() {
