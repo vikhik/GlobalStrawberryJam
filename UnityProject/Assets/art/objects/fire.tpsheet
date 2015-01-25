@@ -5,9 +5,10 @@
 # http://www.codeandweb.com/texturepacker/unity
 #
 # Sprite sheet: fire.png (128 x 128)
-# $TexturePacker:SmartUpdate:2659c53f9f2d1423e21f51015732c7ad:328856ebb6616991e1edfd39aa722fbc:3b95f9ee06c6eea9fb51cacef442595a$
+# $TexturePacker:SmartUpdate:fe83bafcc53b1d45da5b9026867210ac:30f29120ca16e9910fefe4eab3341009:3b95f9ee06c6eea9fb51cacef442595a$
 #
 
 fire00;2;56;37;70;0.5;0.5
 fire01;41;56;37;70;0.5;0.5
 fire02;80;56;37;70;0.5;0.5
+fireunlit;2;19;10;35;1.85;0.4285714285714286

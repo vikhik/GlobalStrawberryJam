@@ -5,6 +5,7 @@ TextureImporter:
     21300000: fire00
     21300002: fire01
     21300004: fire02
+    21300006: fireunlit
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -75,6 +76,16 @@ TextureImporter:
         height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireunlit
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 19
+        width: 10
+        height: 35
+      alignment: 9
+      pivot: {x: 1.85000002, y: .428571433}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
