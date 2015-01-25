@@ -24,6 +24,7 @@ public class SmartObject : MonoBehaviour {
 	public ObjectState state = ObjectState.unused;
 
 	public Sprite usedSprite = null;
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -35,6 +36,7 @@ public class SmartObject : MonoBehaviour {
 		}
 
 		descriptiontext = FindObjectOfType<DescriptionText>();
+		animator = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -90,6 +92,10 @@ public class SmartObject : MonoBehaviour {
 		case ObjectState.used:
 			GetComponent<SpriteRenderer>().sprite = usedSprite;
 			selectable = false;
+
+			if (animator) {
+				animator.SetBool("used", true);
+			}
 			break;
 		}
 
