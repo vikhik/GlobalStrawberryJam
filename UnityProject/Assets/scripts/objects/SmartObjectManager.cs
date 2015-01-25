@@ -66,6 +66,7 @@ public class SmartObjectManager : MonoBehaviour {
 	public static GameState gamestate = new GameState();
 
 	public GameObject monster;
+	public GameObject professor;
 	public SmartObject door;
 
 	public static void resetManager() {
@@ -149,6 +150,10 @@ public class SmartObjectManager : MonoBehaviour {
 				StartCoroutine(doorExplosion());
 
 				sceneFader.endGame("Your experiment is a success!");
+			}
+			else if (gamestate.allEscaped()) {
+				professor.SetActive(true);
+				sceneFader.endGame("How can you experiment like this?", 3f);
 			}
 		}
 	}
