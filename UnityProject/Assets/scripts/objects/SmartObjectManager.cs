@@ -138,7 +138,7 @@ public class SmartObjectManager : MonoBehaviour {
 			}
 			else if (gamestate.allEscaped()) {
 				professor.SetActive(true);
-				sceneFader.endGame("How can you experiment like this?", 8f);
+				sceneFader.endGame("Your experiment is a failure...", 8f);
 			}
 			else {
 				sceneFader.failGame("The experiment must continue... The hunt begins anew!", 3f);
@@ -155,6 +155,8 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 
 		door.setState(ObjectState.used);
+		var audio = GetComponent<AudioSource>();
+		audio.Play();
 	}
 
 	// Update is called once per frame
