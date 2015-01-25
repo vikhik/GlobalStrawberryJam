@@ -142,7 +142,7 @@ public class SmartObjectManager : MonoBehaviour {
 			//if all escape
 			// find and activate the monster
 			// hit the monster animator monsterGO trigger 
-			if (gamestate.allEscaped()) {
+			if (gamestate.allFailed()) {
 				monster.SetActive(true);
 				monster.GetComponent<Animator>().SetTrigger("monsterGO");
 
