@@ -36,7 +36,6 @@ public class SmartObject : MonoBehaviour {
 		}
 
 		descriptiontext = FindObjectOfType<DescriptionText>();
-		animator = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -92,6 +91,8 @@ public class SmartObject : MonoBehaviour {
 		case ObjectState.used:
 			GetComponent<SpriteRenderer>().sprite = usedSprite;
 			selectable = false;
+
+			print(animator);
 
 			if (animator) {
 				animator.SetBool("used", true);

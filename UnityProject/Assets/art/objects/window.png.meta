@@ -55,8 +55,8 @@ TextureImporter:
         y: 76
         width: 79
         height: 50
-      alignment: 9
-      pivot: {x: .474683553, y: -.109999999}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: window02
       rect:
@@ -65,8 +65,8 @@ TextureImporter:
         y: 76
         width: 79
         height: 50
-      alignment: 9
-      pivot: {x: .474683553, y: -.109999999}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: window03
       rect:
@@ -75,8 +75,8 @@ TextureImporter:
         y: 24
         width: 79
         height: 50
-      alignment: 9
-      pivot: {x: .474683553, y: -.109999999}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: window04
       rect:
@@ -85,8 +85,8 @@ TextureImporter:
         y: 24
         width: 79
         height: 50
-      alignment: 9
-      pivot: {x: .474683553, y: -.109999999}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: windowescaped
       rect:
@@ -95,8 +95,8 @@ TextureImporter:
         y: 8
         width: 79
         height: 118
-      alignment: 9
-      pivot: {x: .474683553, y: .529661}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
