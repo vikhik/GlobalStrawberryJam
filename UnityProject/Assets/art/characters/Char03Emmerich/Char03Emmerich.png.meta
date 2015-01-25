@@ -77,7 +77,7 @@ TextureImporter:
         width: 49
         height: 96
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0416666679}
+      pivot: {x: .561224461, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab01
       rect:
@@ -87,7 +87,7 @@ TextureImporter:
         width: 44
         height: 97
       alignment: 9
-      pivot: {x: 1.2954545, y: -.0412371121}
+      pivot: {x: .602272749, y: -.0412371121}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab02
       rect:
@@ -97,7 +97,7 @@ TextureImporter:
         width: 41
         height: 96
       alignment: 9
-      pivot: {x: 1.36585367, y: -.0416666679}
+      pivot: {x: .621951222, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab03
       rect:
@@ -107,7 +107,7 @@ TextureImporter:
         width: 41
         height: 95
       alignment: 9
-      pivot: {x: 1.36585367, y: -.042105265}
+      pivot: {x: .621951222, y: -.042105265}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab04
       rect:
@@ -117,7 +117,7 @@ TextureImporter:
         width: 43
         height: 96
       alignment: 9
-      pivot: {x: 1.32558143, y: -.0416666679}
+      pivot: {x: .616279066, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab05
       rect:
@@ -127,7 +127,7 @@ TextureImporter:
         width: 41
         height: 96
       alignment: 9
-      pivot: {x: 1.36585367, y: -.0416666679}
+      pivot: {x: .621951222, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab06
       rect:
@@ -137,7 +137,7 @@ TextureImporter:
         width: 43
         height: 96
       alignment: 9
-      pivot: {x: 1.32558143, y: -.0416666679}
+      pivot: {x: .616279066, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab07
       rect:
@@ -147,7 +147,7 @@ TextureImporter:
         width: 41
         height: 95
       alignment: 9
-      pivot: {x: 1.36585367, y: -.042105265}
+      pivot: {x: .621951222, y: -.042105265}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab08
       rect:
@@ -157,7 +157,7 @@ TextureImporter:
         width: 41
         height: 96
       alignment: 9
-      pivot: {x: 1.36585367, y: -.0416666679}
+      pivot: {x: .621951222, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Grab09
       rect:
@@ -167,7 +167,7 @@ TextureImporter:
         width: 44
         height: 97
       alignment: 9
-      pivot: {x: 1.2954545, y: -.0412371121}
+      pivot: {x: .602272749, y: -.0412371121}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle00
       rect:
@@ -177,7 +177,7 @@ TextureImporter:
         width: 49
         height: 96
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0416666679}
+      pivot: {x: .561224461, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle01
       rect:
@@ -187,7 +187,7 @@ TextureImporter:
         width: 49
         height: 98
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0408163257}
+      pivot: {x: .561224461, y: -.0408163257}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle02
       rect:
@@ -197,7 +197,7 @@ TextureImporter:
         width: 49
         height: 99
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0404040404}
+      pivot: {x: .561224461, y: -.0404040404}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle03
       rect:
@@ -207,7 +207,7 @@ TextureImporter:
         width: 49
         height: 100
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0399999991}
+      pivot: {x: .561224461, y: -.0399999991}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle04
       rect:
@@ -217,7 +217,7 @@ TextureImporter:
         width: 49
         height: 100
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0399999991}
+      pivot: {x: .561224461, y: -.0399999991}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle05
       rect:
@@ -227,7 +227,7 @@ TextureImporter:
         width: 49
         height: 98
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0408163257}
+      pivot: {x: .561224461, y: -.0408163257}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Idle06
       rect:
@@ -237,7 +237,7 @@ TextureImporter:
         width: 49
         height: 96
       alignment: 9
-      pivot: {x: 1.1836735, y: -.0416666679}
+      pivot: {x: .561224461, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk00
       rect:
@@ -247,7 +247,7 @@ TextureImporter:
         width: 47
         height: 96
       alignment: 9
-      pivot: {x: 1.23404253, y: -.0416666679}
+      pivot: {x: .585106373, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk01
       rect:
@@ -257,7 +257,7 @@ TextureImporter:
         width: 44
         height: 95
       alignment: 9
-      pivot: {x: 1.2954545, y: -.0736842081}
+      pivot: {x: .602272749, y: -.0736842081}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk02
       rect:
@@ -267,7 +267,7 @@ TextureImporter:
         width: 43
         height: 95
       alignment: 9
-      pivot: {x: 1.27906978, y: -.0736842081}
+      pivot: {x: .569767416, y: -.0736842081}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk03
       rect:
@@ -277,7 +277,7 @@ TextureImporter:
         width: 44
         height: 94
       alignment: 9
-      pivot: {x: 1.22727275, y: -.0744680837}
+      pivot: {x: .534090936, y: -.0744680837}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk04
       rect:
@@ -287,7 +287,7 @@ TextureImporter:
         width: 43
         height: 96
       alignment: 9
-      pivot: {x: 1.23255813, y: -.0416666679}
+      pivot: {x: .523255825, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk05
       rect:
@@ -297,7 +297,7 @@ TextureImporter:
         width: 43
         height: 96
       alignment: 9
-      pivot: {x: 1.25581396, y: -.0416666679}
+      pivot: {x: .54651165, y: -.0416666679}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk06
       rect:
@@ -307,7 +307,7 @@ TextureImporter:
         width: 45
         height: 97
       alignment: 9
-      pivot: {x: 1.22222221, y: -.0412371121}
+      pivot: {x: .544444442, y: -.0412371121}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk07
       rect:
@@ -317,7 +317,7 @@ TextureImporter:
         width: 47
         height: 95
       alignment: 9
-      pivot: {x: 1.21276593, y: -.042105265}
+      pivot: {x: .56382978, y: -.042105265}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Emmerich Hilderbrand Walk08
       rect:
@@ -327,7 +327,7 @@ TextureImporter:
         width: 47
         height: 95
       alignment: 9
-      pivot: {x: 1.21276593, y: -.042105265}
+      pivot: {x: .56382978, y: -.042105265}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
