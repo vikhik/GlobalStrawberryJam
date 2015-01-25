@@ -2,6 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public class GameState {
+	bool ladyescaped = false;
+	bool detectiveescaped = false;
+	bool soldierescaped = false;
+
+	public bool hasEscaped(int id) {
+		switch (id) {
+			case 0:
+				return ladyescaped;
+			case 1:
+				return detectiveescaped;
+			case 2:
+				return soldierescaped;
+			default:
+				return false;
+		}
+	}
+
+	public void escape(int id) {
+		switch (id) {
+			case 0:
+				ladyescaped = true;
+				break;
+			case 1:
+				detectiveescaped = true;
+				break;
+			case 2:
+				soldierescaped = true;
+				break;
+		}
+	}
+
+	public bool allEscaped() {
+		return ladyescaped && detectiveescaped && soldierescaped;
+	}
+
+	public bool allFailed() {
+		return !ladyescaped && !detectiveescaped && !soldierescaped;
+	}
+}
+
 public class SmartObjectManager : MonoBehaviour {
 
 	private List<SmartObject> collection = new List<SmartObject>();
@@ -11,7 +52,6 @@ public class SmartObjectManager : MonoBehaviour {
 	private Animator animator;
 
 	public List<AdventureController> characters = new List<AdventureController>();
-	private static int currentCharacter = -1;
 
 	// UNUSED NOW
 	//private SelectionUI selectionUI;
@@ -19,10 +59,16 @@ public class SmartObjectManager : MonoBehaviour {
 	// REPLACED WITH:
 	private SelectionText selectionText;
 
+	public List<SpriteRenderer> vatsprites = new List<SpriteRenderer>();
+
+	private static int currentCharacter = -1;
 	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
+	public static GameState gamestate = new GameState();
 
-	void Awake() {
-
+	public static void resetManager() {
+		currentCharacter = -1;
+		savestate = new List<SmartObjectSnapshot>();
+		gamestate = new GameState();
 	}
 
 	// Use this for initialization
@@ -44,6 +90,20 @@ public class SmartObjectManager : MonoBehaviour {
 		if (savestate.Count > 0) {
 			loadFromSaveState();
 		}
+
+		setVatState();
+	}
+
+	void setVatState() {
+		int charnumber = 0;
+
+		while (charnumber < currentCharacter) {
+			if (!gamestate.hasEscaped(charnumber)) {
+				vatsprites[charnumber].gameObject.SetActive(true);
+
+			}
+			charnumber++;
+		}
 	}
 
 	void setNextCharacter() {
@@ -57,6 +117,25 @@ public class SmartObjectManager : MonoBehaviour {
 		}
 		else {
 			// PLAY FINAL CUTSCENE
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
+			// ***************************************************************************************************************************
 		}
 	}
 	
@@ -77,7 +156,7 @@ public class SmartObjectManager : MonoBehaviour {
 			selection.Add(smartobject);
 			smartobject.selected = true;
 
-			print("SELECTED: " + smartobject);
+			//print("SELECTED: " + smartobject);
 
 			//selectionUI.selectObject(smartobject);
 			selectionText.updateSelection(selection);
@@ -90,7 +169,7 @@ public class SmartObjectManager : MonoBehaviour {
 	public void deselectObject(SmartObject smartobject) {
 		selection.Remove(smartobject);
 		smartobject.selected = false;
-		print("DESELECTED: " + smartobject);
+		//print("DESELECTED: " + smartobject);
 		//selectionUI.deselectObject(smartobject);
 		selectionText.updateSelection(selection);
 	}
@@ -99,7 +178,7 @@ public class SmartObjectManager : MonoBehaviour {
 		// find a triplet, if any
 
 		if (selection.Count != 3) {
-			print("NOT READY FOR THINGS");
+			//print("NOT READY FOR THINGS");
 			return;
 		} 
 
@@ -118,12 +197,14 @@ public class SmartObjectManager : MonoBehaviour {
 
 		if (chosentriplet == null) {
 			// default failstate
-			print("WE FAILED TO DO THINGS");
-			endScene(null);
+			//print("WE FAILED TO DO THINGS");
+			endScene("You waste fruitless hours trying to escape using these items. Eventually, you give into your despair.");
 		}
 		else {
-			print("WE ARE DOING THE THINGS");
+			//print("WE ARE DOING THE THINGS");
 			string sceneEnding = chosentriplet.useTriplet();
+
+			SmartObjectManager.gamestate.escape(SmartObjectManager.currentCharacter);
 
 			endScene(sceneEnding);
 		}
