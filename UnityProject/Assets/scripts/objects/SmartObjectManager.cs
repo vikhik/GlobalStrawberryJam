@@ -68,6 +68,7 @@ public class SmartObjectManager : MonoBehaviour {
 	public GameObject monster;
 	public GameObject professor;
 	public SmartObject door;
+	public SmartObject herring;
 
 	public static void resetManager() {
 		currentCharacter = -1;
@@ -206,16 +207,23 @@ public class SmartObjectManager : MonoBehaviour {
 				break;
 			}
 		}
+		selectionText.updateSelection(selection);
+
+		bool hadHerring = selection[0] == herring || selection[1] == herring || selection[2] == herring;
 
 		while (selection.Count > 0) {
 			deselectObject(selection[0]);
 		}
-		selectionText.updateSelection(selection);
 
 		if (chosentriplet == null) {
 			// default failstate
 			//print("WE FAILED TO DO THINGS");
-			endScene("You waste fruitless hours trying to escape using these items. Eventually, you give into your despair.");
+			if (hadHerring) {
+				endScene("You feel drowsy after eating the red herring. As you fall asleep on the floor you hear the faint sound of laughter.");
+			}
+			else {
+				endScene("You waste fruitless hours trying to escape using these items. Eventually, you give into your despair.");
+			}
 		}
 		else {
 			//print("WE ARE DOING THE THINGS");
