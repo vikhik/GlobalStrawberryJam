@@ -7,6 +7,7 @@ public class SceneFader : MonoBehaviour {
 	public float fadeDuration = 3f;
 	public float textFadeDuration = 1f;
 	public float textDisplayDuration = 1f;
+	public float animationDuration = 5f;
 
 	public string nextLevel = "Room01";
 	private DescriptionText descriptionText;
@@ -45,6 +46,25 @@ public class SceneFader : MonoBehaviour {
 
 		if (targetlevel != null) {
 			nextLevel = targetlevel;
+		}
+
+		StartCoroutine(FadeOut());
+	}
+
+	public void endGame(string endingText) {
+		endingTextUI.text = endingText;
+
+		nextLevel = "Credits";
+
+		StartCoroutine(FadeDelay());
+	}
+
+	private IEnumerator FadeDelay() {
+
+		float progress = 0;
+
+		while (progress < animationDuration) {
+			yield return null;
 		}
 
 		StartCoroutine(FadeOut());

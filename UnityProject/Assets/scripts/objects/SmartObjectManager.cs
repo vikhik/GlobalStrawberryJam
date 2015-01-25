@@ -65,6 +65,9 @@ public class SmartObjectManager : MonoBehaviour {
 	static List<SmartObjectSnapshot> savestate = new List<SmartObjectSnapshot>();
 	public static GameState gamestate = new GameState();
 
+	public GameObject monster;
+	public SmartObject door;
+
 	public static void resetManager() {
 		currentCharacter = -1;
 		savestate = new List<SmartObjectSnapshot>();
@@ -136,9 +139,31 @@ public class SmartObjectManager : MonoBehaviour {
 			// ***************************************************************************************************************************
 			// ***************************************************************************************************************************
 			// ***************************************************************************************************************************
+			//if all escape
+			// find and activate the monster
+			// hit the monster animator monsterGO trigger 
+			if (gamestate.allEscaped()) {
+				monster.SetActive(true);
+				monster.GetComponent<Animator>().SetTrigger("monsterGO");
+
+				StartCoroutine(doorExplosion());
+
+				sceneFader.endGame("Your experiment is a success!");
+			}
 		}
 	}
-	
+
+	private IEnumerator doorExplosion() {
+		var progress = 0f;
+
+		while (progress < 7f) {
+			progress += Time.deltaTime;
+			yield return null;
+		}
+
+		door.setState(ObjectState.used);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if (selection.Count == 3) {

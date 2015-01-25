@@ -85,7 +85,7 @@ public class SmartObject : MonoBehaviour {
 		}
 	}
 
-	private void setState(ObjectState newstate) {
+	public void setState(ObjectState newstate) {
 		state = newstate;
 
 		switch (state) {
