@@ -66,7 +66,21 @@ public class SceneFader : MonoBehaviour {
 		nextLevel = "Room01";
 
 		StartCoroutine(FadeDelay(delaytime));
+		StartCoroutine(WipeManager());
 	}
+
+	private IEnumerator WipeManager() {
+
+		float progress = 0;
+
+		while (progress < animationDuration + fadeDuration) {
+			progress += Time.deltaTime;
+			yield return null;
+		}
+
+		SmartObjectManager.resetManager();
+	}
+
 
 	private IEnumerator FadeDelay(float delaytime = 6.6f) {
 
