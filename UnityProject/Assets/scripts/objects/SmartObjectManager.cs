@@ -153,7 +153,7 @@ public class SmartObjectManager : MonoBehaviour {
 
 				StartCoroutine(doorExplosion());
 
-				sceneFader.endGame("Your experiment is a success!");
+				sceneFader.endGame("Your experiment is a success!", 10f);
 			}
 			else if (gamestate.allEscaped()) {
 				professor.SetActive(true);
