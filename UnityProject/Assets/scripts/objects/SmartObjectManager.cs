@@ -11,7 +11,7 @@ public class SmartObjectManager : MonoBehaviour {
 	private Animator animator;
 
 	public List<AdventureController> characters = new List<AdventureController>();
-	private int currentCharacter = 0;
+	private static int currentCharacter = -1;
 
 	// UNUSED NOW
 	//private SelectionUI selectionUI;
@@ -39,16 +39,25 @@ public class SmartObjectManager : MonoBehaviour {
 	
 		sceneFader = FindObjectOfType<SceneFader>();
 
+		setNextCharacter();
+		
 		if (savestate.Count > 0) {
-			setNextCharacter();
 			loadFromSaveState();
 		}
 	}
 
 	void setNextCharacter() {
-		characters[currentCharacter].gameObject.SetActive(false);
+		if (currentCharacter >= 0 && characters[currentCharacter]) {
+			characters[currentCharacter].gameObject.SetActive(false);
+		}
+
 		currentCharacter++;
-		characters[currentCharacter].gameObject.SetActive(true);
+		if (currentCharacter < characters.Count && characters[currentCharacter]) {
+			characters[currentCharacter].gameObject.SetActive(true);
+		}
+		else {
+			// PLAY FINAL CUTSCENE
+		}
 	}
 	
 	// Update is called once per frame
