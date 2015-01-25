@@ -99,14 +99,21 @@ public class SmartObjectManager : MonoBehaviour {
 	}
 
 	void setVatState() {
-		int charnumber = 0;
-
-		while (charnumber < currentCharacter) {
-			if (!gamestate.hasEscaped(charnumber)) {
-				vatsprites[charnumber].gameObject.SetActive(true);
-
+		if (gamestate.allEscaped()) {
+			foreach (var vat in vatsprites) {
+				vat.gameObject.SetActive(false);
 			}
-			charnumber++;
+		}
+		else {
+			int charnumber = 0;
+
+			while (charnumber < currentCharacter) {
+				if (!gamestate.hasEscaped(charnumber)) {
+					vatsprites[charnumber].gameObject.SetActive(true);
+
+				}
+				charnumber++;
+			}
 		}
 	}
 
@@ -140,9 +147,6 @@ public class SmartObjectManager : MonoBehaviour {
 			// ***************************************************************************************************************************
 			// ***************************************************************************************************************************
 			// ***************************************************************************************************************************
-			//if all escape
-			// find and activate the monster
-			// hit the monster animator monsterGO trigger 
 			if (gamestate.allFailed()) {
 				monster.SetActive(true);
 				monster.GetComponent<Animator>().SetTrigger("monsterGO");
@@ -154,6 +158,10 @@ public class SmartObjectManager : MonoBehaviour {
 			else if (gamestate.allEscaped()) {
 				professor.SetActive(true);
 				sceneFader.endGame("How can you experiment like this?", 3f);
+			}
+			else {
+				sceneFader.failGame("The experiment must continue... Try again!", 3f);
+				SmartObjectManager.resetManager();
 			}
 		}
 	}

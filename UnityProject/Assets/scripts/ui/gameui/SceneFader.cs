@@ -51,7 +51,7 @@ public class SceneFader : MonoBehaviour {
 		StartCoroutine(FadeOut());
 	}
 
-	public void endGame(string endingText, float delaytime = 66.6f) {
+	public void endGame(string endingText, float delaytime = 6.6f) {
 		endingTextUI.text = endingText;
 
 		nextLevel = "Credits";
@@ -59,15 +59,25 @@ public class SceneFader : MonoBehaviour {
 		StartCoroutine(FadeDelay(delaytime));
 	}
 
-	private IEnumerator FadeDelay(float delaytime = 66.6f) {
 
-		if (delaytime != 66.6f) {
+	public void failGame(string endingText, float delaytime = 6.6f) {
+		endingTextUI.text = endingText;
+
+		nextLevel = "Room01";
+
+		StartCoroutine(FadeDelay(delaytime));
+	}
+
+	private IEnumerator FadeDelay(float delaytime = 6.6f) {
+
+		if (delaytime != 6.6f) {
 			animationDuration = delaytime;
 		}
 
 		float progress = 0;
 
 		while (progress < animationDuration) {
+			progress += Time.deltaTime;
 			yield return null;
 		}
 
