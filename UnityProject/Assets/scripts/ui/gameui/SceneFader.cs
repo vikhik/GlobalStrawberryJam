@@ -9,6 +9,7 @@ public class SceneFader : MonoBehaviour {
 	public float textDisplayDuration = 1f;
 
 	public string nextLevel = "Room01";
+	private DescriptionText descriptionText;
 
 	Image fadeImageUI;
 	Text endingTextUI;
@@ -19,6 +20,7 @@ public class SceneFader : MonoBehaviour {
 		endingTextUI = GetComponentInChildren<Text>();
 
 		StartCoroutine(FadeIn());
+		descriptionText = FindObjectOfType<DescriptionText>();
 	}
 
 	private IEnumerator FadeIn() {
@@ -34,6 +36,7 @@ public class SceneFader : MonoBehaviour {
 			yield return null;
 		}
 
+		descriptionText.displaytext = true;
 		fadeImageUI.color = Color.clear;
 	}
 
@@ -49,6 +52,7 @@ public class SceneFader : MonoBehaviour {
 
 	private IEnumerator FadeOut() {
 
+		descriptionText.displaytext = false;
 		float progress = 0;
 
 		Color startColor = fadeImageUI.color;
@@ -61,6 +65,7 @@ public class SceneFader : MonoBehaviour {
 		}
 
 		fadeImageUI.color = Color.black;
+
 
 		StartCoroutine(TextIn());
 	}

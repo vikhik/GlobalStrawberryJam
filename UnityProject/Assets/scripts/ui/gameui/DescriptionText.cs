@@ -5,6 +5,7 @@ using System.Collections;
 public class DescriptionText : MonoBehaviour {
 
 	Text hovertext;
+	public bool displaytext = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,9 @@ public class DescriptionText : MonoBehaviour {
 	}
 
 	public void setString(string newtext) {
-		hovertext.text = newtext;
+		if (displaytext)
+			hovertext.text = newtext;
+		else
+			hovertext.text = null;
 	}
 }
